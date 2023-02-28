@@ -1,1 +1,16 @@
-sdfhsjdfgjkggggggkkkhjhfajdfj
+在目录下新建一个.gitignore 文件
+
+**/node_modules(忽略所有的node_modlues文件夹)
+/db (忽略db文件夹下的所有文件)
+
+
+
+1、git init 初始化本地仓库
+2、git add . (提交所有文件到本地仓库添加文件到暂存区)
+3、git commit -m 'message'(将暂存区所有文件添加到本地仓库,message即是我们用来简要说明这次提交的语句)
+4、git ls-files (查看已经放到本地仓库的文件)
+把本地库与远程库关联（如果已经有origin关联则可以忽略）
+5、git remote add origin 你的远程库地址
+6、推送（提交）代码：
+git push <远程主机名> <本地分支名>:<远程分支名>
+
